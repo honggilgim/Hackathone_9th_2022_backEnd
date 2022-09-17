@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class PeriodicalTourRegisterTable {
+public class PeriodicalTourRegisterTableDTO {
 
     //정기 접수 테이블을 가져올 DTO
     private long periodicalTourRegisterTableId;
