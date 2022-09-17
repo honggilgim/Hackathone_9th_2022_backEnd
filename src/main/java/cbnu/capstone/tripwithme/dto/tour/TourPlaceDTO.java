@@ -5,8 +5,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class TourPlace {
-
+public class TourPlaceDTO {
+// 여행지 장소 정보 DTO
 
     private String tourCode;
     private String tourName;
