@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Entity
 @Table(schema = "tripwithme",name = "ALWAYSTOURREGISTERTABLE")
 public class AlwaysTourRegisterTable {
-
+    //상시 관광지 신청 테이블
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column

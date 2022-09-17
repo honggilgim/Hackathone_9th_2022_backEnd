@@ -13,6 +13,7 @@ import javax.persistence.*;
 @Entity
 @Table(schema = "tripwithme",name = "PERIODICALTOURREGISTERTABLE")
 public class PeriodicalTourRegisterTable {
+    // 정기관광지 신청 테이블
 
 
     @Id
