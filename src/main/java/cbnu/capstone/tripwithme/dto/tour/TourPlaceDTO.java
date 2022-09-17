@@ -22,5 +22,7 @@ public class TourPlaceDTO {
     private int score;
     private String picUrl;
     private String explanation;
+    private String location_y;
+    private String location_x;
 
 }

@@ -60,6 +60,12 @@ public class TourListTable {
 
     @Column
     private String explanation;
+
+    @Column
+    private String location_y;
+
+    @Column
+    private String location_x;
 }
 
 
