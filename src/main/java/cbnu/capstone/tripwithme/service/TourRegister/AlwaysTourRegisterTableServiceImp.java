@@ -22,8 +22,8 @@ public class AlwaysTourRegisterTableServiceImp implements AlwaysTourRegisterServ
     }
 
     @Override
-    public List<AlwaysTourRegisterTableDTO> getAlwaysTourRegisterTable(String tourcode) {
-        return alwaysTourRegisterMapper.AlwaysTourRegisterTableFilter(tourcode);
+    public List<AlwaysTourRegisterTableDTO> getAlwaysTourRegisterTable(String up, String down) {
+        return alwaysTourRegisterMapper.AlwaysTourRegisterTableFilter(up, down);
     }
 
     @Override
