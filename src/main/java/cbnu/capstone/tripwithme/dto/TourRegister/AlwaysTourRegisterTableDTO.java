@@ -12,4 +12,6 @@ public class AlwaysTourRegisterTableDTO {
     private String tourCode;
     private String userId;
     private String date;
+    private String up;
+    private String down;
 }

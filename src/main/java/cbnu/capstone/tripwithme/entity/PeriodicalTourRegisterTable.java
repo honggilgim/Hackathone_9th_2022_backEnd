@@ -11,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(schema = "tripwithme",name = "PERIODICALTOURREGISTERTABLE")
+@Table(schema = "tripwithme",name = "PeriodicalTourRegisterTable")
 public class PeriodicalTourRegisterTable {
     // 정기관광지 신청 테이블
 
@@ -29,4 +29,8 @@ public class PeriodicalTourRegisterTable {
 
     @Column
     private String date;
+    @Column
+    private String up;
+    @Column
+    private String down;
 }

@@ -3,8 +3,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cbnu.capstone.tripwithme.mapper.TourRegister.AlwaysTourRegisterMapper">
 
-    <select id="AlwaysTourRegisterTable" resultType="cbnu.capstone.tripwithme.dto.TourRegister.AlwaysTourRegisterTableDTO">
-        SELECT * FROM ALWAYSTOURREGISTERTABLE where tourCode = #{tourCode};
+    <select id="AlwaysTourRegisterMapper" resultType="cbnu.capstone.tripwithme.dto.TourRegister.AlwaysTourRegisterTableDTO">
+        SELECT * FROM AlwaysTourRegisterTable where up=#{up} and down = #{down};
     </select>
 
 </mapper>

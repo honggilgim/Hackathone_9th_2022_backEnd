@@ -15,17 +15,8 @@ public class PeriodicalTourRegisterServiceImp implements PeriodicalTourRegisterS
     private final PeriodicalTourRegisterMapper periodicalTourRegisterMapper;
 
     @Override
-    public List<PeriodicalTourRegisterTableDTO> getAlwaysTourRegisterTable(String up, String down) {
-        return periodicalTourRegisterMapper.PeriodicalTourRegisterFilter(up, down);
-    }
-    @Override
-
-    public List<PeriodicalTourRegisterTableDTO> getPeriodicalTourRegisterTable() {
-        return null;
-    }
-
-    @Override
     public List<PeriodicalTourRegisterTableDTO> getPeriodicalTourRegisterTable(String up, String down) {
-        return null;
+        return periodicalTourRegisterMapper.periodicalTourRegisterFilter(up, down);
     }
+
 }

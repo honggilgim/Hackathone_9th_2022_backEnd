@@ -7,7 +7,5 @@ import java.util.List;
 
 @Mapper
 public interface AlwaysTourRegisterMapper {
-    List<AlwaysTourRegisterTableDTO> getAlwaysTourRegisterTable();
-    List<AlwaysTourRegisterTableDTO> AlwaysTourRegisterTableFilter(String up, String down);
-    void setAlwaysTourRegisterTables(Long alwaysTourRegisterTableid, String tourCode, String userId, String date);
+    List<AlwaysTourRegisterTableDTO> alwaysTourRegisterTableFilter(String up, String down);
 }

@@ -5,10 +5,12 @@ import org.springframework.web.bind.annotation.*;
 
 import cbnu.capstone.tripwithme.dto.TourRegister.AlwaysTourRegisterTableDTO;
 import cbnu.capstone.tripwithme.service.TourRegister.AlwaysTourRegisterService;
+import cbnu.capstone.tripwithme.dto.TourRegister.GPS;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-@RequestMapping("/AlwaysTourReister")
+@RequestMapping("/alwaysTourRegister")
 @CrossOrigin(origins ="*", maxAge = 3600)
 @RestController
 @RequiredArgsConstructor
@@ -17,10 +19,14 @@ public class AlwaysTourRegisterTable {
 
     private final AlwaysTourRegisterService alwaysTourRegisterService;
 
-    @GetMapping("/{up}/{down}")
-    public List<AlwaysTourRegisterTableDTO> getAlwaysTourRegisterTable(@PathVariable String up, @PathVariable String down)
+    @PostMapping("/")
+    public List<AlwaysTourRegisterTableDTO> getAlwaysTourRegisterTableo(HttpServletRequest request)
     {
-        return alwaysTourRegisterService.getAlwaysTourRegisterTable(up, down);
+
+        GPS gps = new GPS();
+        gps.setUp(request.getParameter("up"));
+        gps.setDown(request.getParameter("down"));
+        return alwaysTourRegisterService.getAlwaysTourRegisterTable(gps);
     }
 
 }
