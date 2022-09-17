@@ -9,3 +9,4 @@ public interface UserInfoMapper {
     String getUserInfo(String userId);
     void setUserInfo(String userId, String password, String flag);
 }
+

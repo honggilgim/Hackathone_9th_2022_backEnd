@@ -9,6 +9,6 @@ public interface AlwaysTourRegisterService {
 
     List<AlwaysTourRegisterTableDTO> getAlwaysTourRegisterTable(String tourcode);
 
-    List<AlwaysTourRegisterTableDTO> AlwaysTourRegisterTableFilter(String tourcode);
+    List<AlwaysTourRegisterTableDTO> alwaysTourRegisterTableFilter(String tourcode);
     void setAlwaysTourRegisterTables(Long alwaysTourRegisterTableid, String tourCode, String userId, String date);
 }

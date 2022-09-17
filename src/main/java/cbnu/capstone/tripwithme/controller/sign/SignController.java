@@ -16,14 +16,14 @@ import javax.servlet.http.HttpServletRequest;
 public class SignController {
 
     private final SignService signService;
-
-    @GetMapping("/signin")
-    public String getUserInfo(HttpServletRequest request){
-        String userId = request.getParameter("userId");
-        String password = request.getParameter("password");
-
-        signService.getUserInfo(userId,password);
-
-        return  placelistService.getPlacelistFilter(region);
-    }
+//
+//    @GetMapping("/signin")
+//    public String getUserInfo(HttpServletRequest request){
+//        String userId = request.getParameter("userId");
+//        String password = request.getParameter("password");
+//
+//        signService.get
+//
+//        return  placelistService.getPlacelistFilter(region);
+//    }
 }

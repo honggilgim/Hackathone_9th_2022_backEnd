@@ -4,6 +4,7 @@ import cbnu.capstone.tripwithme.dto.TourRegister.AlwaysTourRegisterTableDTO;
 
 import cbnu.capstone.tripwithme.mapper.TourRegister.AlwaysTourRegisterMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public class AlwaysTourRegisterTableServiceImp implements AlwaysTourRegisterServ
     }
 
     @Override
-    public List<AlwaysTourRegisterTableDTO> AlwaysTourRegisterTableFilter(String tourcode) {
+    public List<AlwaysTourRegisterTableDTO> alwaysTourRegisterTableFilter(String tourcode) {
         return null;
     }
 
